@@ -9,7 +9,7 @@
 		:root{--bg:#0b1220;--accent:#4dd0e1;--text:#eef6fb;--muted:#9aa4b2;--glass-opacity:0.4;--glass-blur:10px}
 		*{box-sizing:border-box}
 		html,body{height:100%;margin:0}
-		body{min-height:100vh;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;color:var(--text);background-color:var(--bg);
+		body{min-height:100vh;display:flex;flex-direction:column;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;color:var(--text);background-color:var(--bg);
 			background-image: url('background1.jpg');
 			background-size: cover;
 			background-position: center center;
@@ -21,15 +21,15 @@
 		.navbar a{color:var(--accent);text-decoration:none;font-weight:600;transition:opacity 0.3s}
 		.navbar a:hover{opacity:0.8}
 		/* 主容器 */
-		.container{max-width:900px;margin:0 auto;padding:40px 20px}
+		.container{max-width:900px;margin:0 auto;padding:40px 20px;flex:1}
 		/* 毛玻璃卡片 */
-		.card{background:rgba(255,255,255,0.55);
-			backdrop-filter: blur(var(--glass-blur));
-			-webkit-backdrop-filter: blur(var(--glass-blur));
+		.card{background:rgba(255,255,255,0.78);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
 			padding:40px;border-radius:20px;margin-bottom:24px}
 		.card h2{margin-top:0;font-size:1.8rem;color:var(--accent);margin-bottom:20px}
-		.card h3{font-size:1.3rem;margin-top:24px;margin-bottom:12px;color:var(--text)}
-		.card p{color:var(--muted);line-height:1.6;margin:12px 0}
+		.card h3{font-size:1.3rem;margin-top:24px;margin-bottom:12px;color:#042}
+		.card p{color:#1a3a4a;line-height:1.7;margin:12px 0}
 		/* 技能列表 */
 		.skills{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
 		.skill-tag{display:inline-block;background:rgba(77,208,225,0.2);color:var(--accent);padding:8px 16px;border-radius:20px;font-size:0.9rem;font-weight:600}
@@ -39,14 +39,14 @@
 		.timeline-item:before{content:'';width:12px;height:12px;background:var(--accent);border-radius:50%;position:absolute;left:-7px;top:2px}
 		.timeline-item .year{color:var(--accent);font-weight:600;font-size:0.9rem}
 		.timeline-item .title{font-weight:600;margin:4px 0}
-		.timeline-item .desc{color:var(--muted);font-size:0.95rem}
+		.timeline-item .desc{color:#1a3a4a;font-size:0.95rem}
 		/* 按钮 */
 		.btn{display:inline-block;padding:12px 24px;border-radius:8px;background:var(--accent);color:#042;font-weight:700;text-decoration:none;transition:background 0.3s;margin-right:12px;margin-top:12px}
 		.btn:hover{background:#2db8cc}
 		.btn-secondary{background:rgba(77,208,225,0.2);color:var(--accent);border:1px solid var(--accent)}
 		.btn-secondary:hover{background:rgba(77,208,225,0.3)}
 		/* 页脚 */
-		footer{text-align:center;color:var(--muted);padding:70px 20px 36px;font-size:1rem;letter-spacing:0.8px;opacity:0.75;border-top:1px solid rgba(255,255,255,0.1);margin-top:40px}
+		footer{text-align:center;color:var(--muted);padding:24px 20px;font-size:1rem;letter-spacing:0.8px;opacity:0.75;border-top:1px solid rgba(255,255,255,0.1)}
 		/* 响应式 */
 		@media(max-width:640px){
 			.container{padding:20px}
@@ -68,32 +68,40 @@
 		<div class="card">
 			<h2>关于我</h2>
 			<p style="font-size:1.05rem">
-				我是一名在读研究生，对Web开发和用户体验充满热情。我致力于创建简洁、高效且易于使用的数字产品，相信好的设计应该既美观又实用。
+				我是一名在读研究生，研究方向包括<b>目标检测</b>、<b>知识蒸馏</b>和<b>对抗学习</b>。在学术研究之外，我也具备扎实的前端与后端全栈开发能力。
 			</p>
 			<p>
-				在学习与工作中，我持续探索前端最佳实践、可访问性设计和性能优化。我喜欢用代码解决实际问题，也热衷于分享所学所得。
+				我相信理论与实践的结合能创造真正的价值——既能在学术上深入探索算法的边界，也能将想法落地为可用的产品。喜欢用代码解决实际问题，并持续学习前沿技术。
 			</p>
 		</div>
 
 		<!-- 技能卡片 -->
 		<div class="card">
 			<h2>技能与专长</h2>
-			<h3>前端开发</h3>
+			<h3>🔬 研究方向</h3>
 			<div class="skills">
-				<span class="skill-tag">HTML</span>
-				<span class="skill-tag">CSS</span>
+				<span class="skill-tag">目标检测</span>
+				<span class="skill-tag">知识蒸馏</span>
+				<span class="skill-tag">对抗学习</span>
+				<span class="skill-tag">深度学习</span>
+				<span class="skill-tag">PyTorch</span>
+				<span class="skill-tag">Python</span>
+			</div>
+			<h3>🌐 前端开发</h3>
+			<div class="skills">
+				<span class="skill-tag">HTML / CSS</span>
 				<span class="skill-tag">JavaScript</span>
 				<span class="skill-tag">React</span>
 				<span class="skill-tag">TypeScript</span>
 				<span class="skill-tag">Vue</span>
 			</div>
-			<h3>其他技能</h3>
+			<h3>⚙️ 后端开发</h3>
 			<div class="skills">
-				<span class="skill-tag">Web Performance</span>
-				<span class="skill-tag">响应式设计</span>
-				<span class="skill-tag">UI/UX</span>
-				<span class="skill-tag">Git</span>
 				<span class="skill-tag">Node.js</span>
+				<span class="skill-tag">Python (Flask/FastAPI)</span>
+				<span class="skill-tag">数据库 (MySQL / MongoDB)</span>
+				<span class="skill-tag">RESTful API</span>
+				<span class="skill-tag">Git</span>
 			</div>
 		</div>
 
@@ -104,12 +112,12 @@
 				<div class="timeline-item">
 					<span class="year">2023 - 至今</span>
 					<p class="title">研究生阶段</p>
-					<p class="desc">专注于Web应用开发与用户界面设计研究，参与多个实践项目。</p>
+					<p class="desc">研究方向包括目标检测、知识蒸馏与对抗学习，同时持续积累前后端全栈开发经验。</p>
 				</div>
 				<div class="timeline-item">
 					<span class="year">2019 - 2023</span>
 					<p class="title">本科学习</p>
-					<p class="desc">计算机科学基础知识打造，系统学习编程语言和Web开发技术。</p>
+					<p class="desc">计算机科学基础知识打造，系统学习编程语言、算法与Web开发技术。</p>
 				</div>
 			</div>
 		</div>
@@ -117,12 +125,12 @@
 		<!-- 兴趣爱好卡片 -->
 		<div class="card">
 			<h2>兴趣与热情</h2>
-			<h3>🎨 设计美学</h3>
-			<p>我相信界面的每一个像素都应该有其目的。我热衷于研究现代设计趋势，包括极简主义、毛玻璃效果和深色主题的应用。</p>
-			<h3>⚡ 性能优化</h3>
-			<p>追求快速的页面加载和流畅的交互体验。喜欢钻研各种优化技巧，从代码分割到图片优化。</p>
+			<h3>🤖 计算机视觉</h3>
+			<p>对目标检测和对抗学习充满热情，喜欢探索如何让计算机更好地理解和分析视觉信息。</p>
+			<h3>🌐 全栈开发</h3>
+			<p>从数据库设计到前端交互，享受完整的产品构建流程。相信全栈思维能带来更全局的技术视野。</p>
 			<h3>📚 持续学习</h3>
-			<p>技术世界瞬息万变，我热衷于学习新的框架、工具和最佳实践，不断提升自己的技能。</p>
+			<p>技术世界瞬息万变，无论是学术前沿还是工程实践，我热衷于不断学习与成长。</p>
 		</div>
 
 		<!-- 联系卡片 -->

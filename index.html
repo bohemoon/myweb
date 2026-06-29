@@ -16,7 +16,8 @@
 			background-position: center center;
 			background-repeat: no-repeat;
 		}
-		main{min-height:100vh}
+		main{min-height:100vh;display:flex;flex-direction:column}
+		.cover{flex:1}
 		.cover{min-height:56vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:48px 20px}
 		.cover .inner{max-width:820px}
 		/* 毛玻璃面板 */
@@ -31,7 +32,7 @@
 		.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#042; font-weight:700;text-decoration:none;margin:0 8px}
 		.about{background:rgba(255,255,255,0.02);padding:28px 20px;border-radius:12px;max-width:920px;margin:-40px auto 40px;position:relative}
 		.container{padding:0 20px}
-		@media(max-width:640px){h1{font-size:1.6rem}.about{margin:-20px 12px 24px}}
+		@media(max-width:640px){h1{font-size:1.6rem}.about{m24px 2012px 24px}}
 		footer{text-align:center;color:var(--muted);padding:60px 20px 36px;font-size:1rem;letter-spacing:0.8px;opacity:0.75}
 	</style>
 </head>
@@ -41,21 +42,13 @@
 			<div class="inner">
 				<div class="glass">
 					<h1>你好，我是 HanLi</h1>
-					<p class="lead">研究生在读 · 简洁实用的界面与可维护的代码。欢迎查看我的简介并与我联系。</p>
+					<p class="lead">研究生在读 · 研究方向包括目标检测、知识蒸馏、对抗学习。欢迎查看我的简介并与我联系。</p>
 					<div class="actions">
 						<a class="btn" href="about.html">关于我</a>
 						<a class="btn" href="gallery.html">📷 画廊</a>
 						<a class="btn" href="mailto:you@example.com">联系我</a>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section id="about" class="container">
-			<div class="about">
-				<h2 style="margin-top:0">关于</h2>
-				<p style="color:var(--muted)">我是一名研究生，专注于构建性能良好、交互友好且易于维护的 Web 应用。平时喜欢把复杂的问题拆成小步实现，并注重无障碍与移动端体验。</p>
-				<p style="color:var(--muted)">技能：HTML / CSS / JavaScript / React / TypeScript 。邮箱：<a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></p>
 			</div>
 		</section>
 

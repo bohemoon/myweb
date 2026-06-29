@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sunset",
+    "file": "images/gallery/sunset.jpg",
+    "thumbnail": "images/gallery/thumbnails/sunset.jpg",
+    "title": "日落时分",
+    "description": "拍摄于海边，金色的余晖洒满海面，宁静而温暖。",
+    "date": "2025-03-15",
+    "tags": ["日落", "海边", "风景", "金色"]
+  },
+  {
+    "id": "mountains",
+    "file": "images/gallery/mountains.jpg",
+    "thumbnail": "images/gallery/thumbnails/mountains.jpg",
+    "title": "山间晨曦",
+    "description": "清晨的第一缕阳光穿透云雾，照亮山谷。",
+    "date": "2025-04-02",
+    "tags": ["山", "日出", "云雾", "风景"]
+  },
+  {
+    "id": "night",
+    "file": "images/gallery/night.jpg",
+    "thumbnail": "images/gallery/thumbnails/night.jpg",
+    "title": "城市夜景",
+    "description": "华灯初上，城市的脉搏在夜色中跳动。",
+    "date": "2025-05-10",
+    "tags": ["城市", "夜景", "灯光", "建筑"]
+  },
+  {
+    "id": "flower",
+    "file": "images/gallery/flower.jpg",
+    "thumbnail": "images/gallery/thumbnails/flower.jpg",
+    "title": "花间细语",
+    "description": "春日花园里，花瓣在微风中轻轻摇曳。",
+    "date": "2025-04-18",
+    "tags": ["花卉", "微距", "春天", "自然"]
+  },
+  {
+    "id": "wave",
+    "file": "images/gallery/wave.jpg",
+    "thumbnail": "images/gallery/thumbnails/wave.jpg",
+    "title": "浪花轻舞",
+    "description": "潮起潮落，每一朵浪花都是自然的诗篇。",
+    "date": "2025-06-05",
+    "tags": ["海边", "海浪", "风景", "蓝色"]
+  },
+  {
+    "id": "autumn",
+    "file": "images/gallery/autumn.jpg",
+    "thumbnail": "images/gallery/thumbnails/autumn.jpg",
+    "title": "秋日私语",
+    "description": "林间小径上铺满金黄的落叶，秋意正浓。",
+    "date": "2024-11-08",
+    "tags": ["秋天", "落叶", "树林", "金色"]
+  }
+]
